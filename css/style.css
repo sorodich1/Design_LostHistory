@@ -67,3 +67,19 @@ body{
 .header_logo{
     padding: 10px;
 }
+.form_search{
+    width: 337px;
+    height: 37;
+    border: 1px solid #000;
+}
+input[type="search"]{
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 274px;
+    vertical-align: middle;
+}
+input[type="submit"]{
+    border: none;
+    background: url(../img/search.png) no-repeat 100% 100%;
+}
