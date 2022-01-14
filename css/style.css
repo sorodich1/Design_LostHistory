@@ -1,8 +1,10 @@
 html{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 *, *::after, *::before{
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
 }
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,19 +21,31 @@ body{
 }
 .header{
     background-color: #fff;
+    width: 83%;
+    float: right;
 }
 .header_wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .header_nav{
     background-color: #F5F6F7;
 }
 .header_list{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     background-color: #F5F6F7;
 }
 .header_item{
@@ -67,19 +81,43 @@ body{
 .header_logo{
     padding: 10px;
 }
+.left_nav{
+    width: 17%;
+    height: 123px;
+    background-color: #EFF1F2;
+    padding-top: 35px;
+}
 .form_search{
-    width: 337px;
-    height: 37;
-    border: 1px solid #000;
+    margin-left: 1px;
+    width: 80%;
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+    background-color: #fff;
+}
+.input_search{
+    height: 49px;
+}
+.input_search::-webkit-input-placeholder{
+    color: #B7B7B7;
 }
 input[type="search"]{
     border: none;
     outline: none;
     -webkit-appearance: none;
-    width: 274px;
+    width: 300px;
     vertical-align: middle;
+    color: #000000;
+    background-color: #fff;
+}
+input[placeholder="Search"]{
+    font-size:24px;
+    margin-left: 10px;
 }
 input[type="submit"]{
     border: none;
     background: url(../img/search.png) no-repeat 100% 100%;
+    width: 26px;
+    height: 23px;
+    position: relative;
+    top: 10px;
 }
