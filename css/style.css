@@ -194,3 +194,10 @@ input{
     background: #EFF1F2;
     padding-left: 15px;
 }
+input[type="submit"]{
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    top: 8px;
+    right: ;
+}
