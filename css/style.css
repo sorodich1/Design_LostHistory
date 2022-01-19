@@ -1,33 +1,41 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo');
 html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *::after, *::before{
     -webkit-box-sizing: inherit;
-            box-sizing: border-box;
+    box-sizing: inherit;
 }
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    line-height: 1.65;
+    color: #7f888f;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
     font-weight: 400;
-    color: #2E363E;
+    line-height: 1.65;
+    background: #FFF;
+    -webkit-text-size-adjust: none;
+    line-height: 1;
 }
 form{
     margin: 0 0 2em 0;
     font: inherit;
     vertical-align: baseline;
 }
-.wrapper{
-    max-width: 1410px;
+#wrapper{
+    max-width: 1917px;
     margin: 0px auto;
     display: flex;
     flex-direction: row-reverse;
     min-height: 100vh;
 }
-.main{
+#main{
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%;
@@ -37,7 +45,8 @@ form{
     margin: 0 auto;
     max-width: 110em;
 }
-.header{
+#header{
+    display: flex;
     background-color: #fff;
     position: relative;
     border-bottom: 5px solid #F56A6A;
