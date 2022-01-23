@@ -40,17 +40,20 @@ form{
     flex-shrink: 1;
     width: 100%;
 }
-.inner-header{
+.inner_header{
     padding: 0 6em 0.1em 6em;
     margin: 0 auto;
-    max-width: 110em;
+    max-width: 150em;
+}
+.logo{
+    margin-right: 104px;
 }
 #header{
     display: flex;
     background-color: #fff;
     position: relative;
     border-bottom: 5px solid #F56A6A;
-    padding: 6em 0 1em 0;
+    padding: 3em 0 1em 0;
 }
 .header_wrapper{
     display: -webkit-box;
@@ -81,6 +84,7 @@ form{
 }
 .header_item{
     float: left;
+    border-right: solid 2px white;
 }
 .icon_item{
     float: right;
@@ -122,35 +126,46 @@ form{
     text-decoration: none;
     color:#D11919;
 }
-/*.form_search{
+/*-------------sidebar----------------*/
+
+/*-----------------search----------------------------*/
+.search{
     position: relative;
-    width: 300px;
+    width: 250px;
     margin: 0 auto;
 }
 input{
     border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 7px;
 }
-.input_search{
-    width: 100%;
+input[type="search"]{
     height: 42px;
-    background: #EFF1F2;
+    width: 100%;
     padding-left: 15px;
+    background: #FFF;
 }
 input[type="submit"]{
     height: 26px;
     width: 26px;
     position: absolute;
     top: 8px;
-}*/
-/*-------------sidebar----------------*/
-input{
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.65;
+    right: 8px;
+    padding-left: 15px;
+    background: url(../img/search.png);
+    cursor: pointer;
 }
+input[type="submit"]::before{
+    font-family: FontAwesome;
+    color: #F9F0DA;
+    font-size: 20px;
+    font-weight: bold;
+}
+input::-webkit-input-placeholder{ 
+    color: rgb(212, 212, 212); 
+    font-size: 16px;
+}
+/*-----------------search----------------------------*/
 #sidebar{
     flex-grow: 0;
     flex-shrink: 0;
@@ -189,7 +204,7 @@ input{
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 250px;
+    top: 100px;
 }
 
 .slides * {
@@ -293,6 +308,9 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
 }
+.content{
+    margin-left: 225px;
+}
 .content_news{
     margin-bottom: 139px;
 }
@@ -301,4 +319,23 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     grid-template-columns: repeat(2, 1fr);
     grid-gap:0 108px;
     align-items: center;
+}
+.news_title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+.news_desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+.news_more{
+    font-size: 16px;
+    color: #F56A6A;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/more.png) no-repeat right center;
+    margin-bottom: 10px;
 }
