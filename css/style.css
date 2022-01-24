@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo');
+
+@font-face {
+    font-family: 'Monserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Monserrat Regular'), local('Monserrat-Regular'),
+                url(../fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Monserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Monserrat Italic'), local('Monserrat-Italic'),
+                url(../fonts/Montserrat-Italic-VariableFont_wght.ttf);
+}
 html{
     margin: 0;
     padding: 0;
@@ -15,8 +29,8 @@ html{
 }
 body{
     color: #7f888f;
-    font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.65;
     background: #FFF;
@@ -308,23 +322,23 @@ input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
 }
-.content{
-    margin-left: 225px;
-}
+
 .content_news{
-    margin-bottom: 139px;
+    margin-bottom: 16em;
 }
 .content_lib{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap:0 108px;
     align-items: center;
+    margin-bottom: 77px;
+    margin: 0 27em 5em 29em;
 }
 .news_title{
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    margin-bottom: 24px;
+    margin-bottom: 85px;
 }
 .news_desc{
     font-size: 16px;
@@ -338,4 +352,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     padding-right: 59px;
     background: url(../img/more.png) no-repeat right center;
     margin-bottom: 10px;
+}
+.content_pic{
+    float: left;
 }
