@@ -2,159 +2,59 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
+    <title>LOSTHISTORY</title>
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="main">
-            <div class="inner_header">
-                <header id="header">
-                    <div class="wrapper">
-                        <div class="header_wrapper">
-                            <div class="logo">
-                                <img src="./img/Logo.png" alt="">
-                            </div>
-                            <nav class="header_nav">
-                                <ul class="header_list">
-                                    <li class="header_item"><a href="#" class="header_link">Главная</a></li>
-                                    <li class="header_item"><a href="#" class="header_link">Сегодня</a></li>
-                                    <li class="header_item"><a href="#" class="header_link">Новости</a></li>
-                                    <li class="header_item"><a href="#" class="header_link">О нас</a></li>
-                                    <li class="header_item"><a href="#" class="header_link">Контакты</a></li>
-                                    <li class="icon_item_l"><a href="#"><img src="./img/icon/Ficebook.png" alt=""></a></li> 
-                                    <li class="icon_item"><a href="#"><img src="./img/icon/Telegramm.png" alt=""></a></li>
-                                    <li class="icon_item"><a href="#"><img src="./img/icon/Vk.png" alt=""></a></li>
-                                    <li class="icon_item"><a href="#"><img src="./img/icon/YouTube.png" alt=""></a></li>   
-                                </ul>
-                            </nav>
-                            <div class="login">
-                                <a href="#">Вход/Регистрация</a>
-                            </div>
-                        </div>          
-                    </div>
-                </header>
-            </div>
-            <ul class="slides">
-                    <input type="radio" name="radio-btn" id="img-1" checked />
-                    <li class="slide-container">
-                        <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-6" class="prev">&#x2039;</label>
-                            <label for="img-2" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <input type="radio" name="radio-btn" id="img-2" />
-                    <li class="slide-container">
-                        <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-1" class="prev">&#x2039;</label>
-                            <label for="img-3" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <input type="radio" name="radio-btn" id="img-3" />
-                    <li class="slide-container">
-                        <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-2" class="prev">&#x2039;</label>
-                            <label for="img-4" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <input type="radio" name="radio-btn" id="img-4" />
-                    <li class="slide-container">
-                        <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-3" class="prev">&#x2039;</label>
-                            <label for="img-5" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <input type="radio" name="radio-btn" id="img-5" />
-                    <li class="slide-container">
-                        <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-4" class="prev">&#x2039;</label>
-                            <label for="img-6" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <input type="radio" name="radio-btn" id="img-6" />
-                    <li class="slide-container">
-                        <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
-                        </div>
-                        <div class="nav">
-                            <label for="img-5" class="prev">&#x2039;</label>
-                            <label for="img-1" class="next">&#x203a;</label>
-                        </div>
-                    </li>
-                
-                    <li class="nav-dots">
-                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-                      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-                    </li> 
-            </ul>
-            <div class="content">    
-                <div class="content_news">
-                    <div class="content_lib lib">
-                            <div class="content_pic">
-                                <img class="img_content" src="./img/content/content1.jpg" alt="news">
-                            </div>
-                            <div class="content_info">
-                                <h3 class="news_title">Префектура в фокусе: Тоттори</h3>
-                                <p class="news_desc">Спрыгнуть с балкона на голову незнакомцу. Преследуйте клубок веревки, чтобы спрятаться, когда придут гости.
-                                    Будучи великолепным с животом вверх, я мог бы пописать на это, если бы у меня была энергия, но под кроватью,
-                                    для нападения на ребенка, откройте дверь, </p>
-                                    <a href="#!" class="news_more">Подробный просмотр</a>
-                            </div>
-                    </div>
-                    <div class="content_lib lib">
-                        <div class="content_info">
-                            <h3 class="news_title">Префектура в фокусе: Тоттори</h3>
-                            <p class="news_desc">Спрыгнуть с балкона на голову незнакомцу. Преследуйте клубок веревки, чтобы спрятаться, когда придут гости.
-                                Будучи великолепным с животом вверх, я мог бы пописать на это, если бы у меня была энергия, но под кроватью,
-                                для нападения на ребенка, откройте дверь, </p>
-                                <a href="#!" class="news_more">Подробный просмотр</a>
-                        </div>
-                        <div class="content_pic">
-                            <img class="img_content" src="./img/content/content2.jpg" alt="news">
-                        </div>
+    <header class="header">
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_logo">
+                    <a href="/" class="header_logo_link">
+                        <img src="./img/Logo.png" alt="logo" class="header_logo_pic">
+                    </a>
                 </div>
-                </div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Главная</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Сегодня</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Новости</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">О нас</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#!" class="header_link">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="header_icon">
+                        <li class="icon_item">
+                            <a href="#!" class="icon"><img src="./img/icon/Ficebook.png" alt="fasebook"></a>
+                        </li>
+                        <li class="icon_item">
+                            <a href="#!" class="icon"><img src="./img/icon/Telegramm.png" alt="telegramm"></a>
+                        </li>
+                        <li class="icon_item">
+                            <a href="#!" class="icon"><img src="./img/icon/Vk.png" alt="vk"></a>
+                        </li>
+                        <li class="icon_item">
+                            <a href="#!" class="icon"><img src="./img/icon/YouTube.png" alt="YouTube"></a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div id="sidebar">
-            <div class="inner_sidebar">
-                 <section class="alt">
-                    <div class="search">
-                        <form method="post" action="#">
-                            <input class="input_search" placeholder="Поиск" type="search" name="q">
-                            <input type="submit" value="">
-                         </form>
-                    </div>
-                 </section>
-            </div>
-        </div>
-    </div>
+    </header>
+    <main class="main">
+        <section class="intro">
+
+        </section>
+    </main>
 </body>
 </html>
