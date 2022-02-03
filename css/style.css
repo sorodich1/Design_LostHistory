@@ -138,9 +138,9 @@ body{
     width: 100%;
 }
 .intro{
-    min-height: 100vh;
+    min-height: 70vh;
     background-size: cover;
-    padding-top: 72px;
+    padding-top: 0px;
     padding-bottom: 223px;
 }
 .slides{
@@ -251,4 +251,31 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     align-items: center;
     margin-bottom: 77px;
 }
+.tour_info{
+    padding-left: 47px;
+}
+.tour_title{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+.tour_desc{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+}
+.tour_more{
+    font-size: 16px;
+    color: #F56A6A;
+    text-decoration: none;
+    padding-right: 59px;
+    background: url(../img/more.png) no-repeat 95% 40%;
+}
+.tour_more:hover, .tour_more:focus{
+    opacity: .65;
+}
 /*Блок tours - конец*/
+/*Блок content - начало*/
+
+/*Блок content - конец*/
