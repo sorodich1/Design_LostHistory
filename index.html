@@ -7,62 +7,84 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper">
-            <div class="header_wrapper">
-                <div class="header_logo">
-                    <a href="/" class="header_logo_link">
-                        <img src="./img/Logo.png" alt="logo" class="header_logo_pic">
-                    </a>
+    <div id="site">
+            <!--Header-->
+        <header class="header">
+            <div class="wrapper">
+                <div class="header_wrapper">
+                    <div class="header_logo">
+                        <a href="/" class="header_logo_link">
+                            <img src="./img/Logo.png" alt="logo" class="header_logo_pic">
+                        </a>
+                    </div>
+                    <nav class="header_nav">
+                        <div class="link_left">
+                            <ul class="header_list">
+                                <li class="header_item">
+                                    <a href="#!" class="header_link">Главная</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#!" class="header_link">Сегодня</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#!" class="header_link">Новости</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#!" class="header_link">О нас</a>
+                                </li>
+                                <li class="header_item">
+                                    <a href="#!" class="header_link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="link_right">
+                            <ul class="header_icon">
+                                <li class="icon_item">
+                                    <a href="#!" class="icon"><img src="./img/icon/Ficebook.png" alt="fasebook"></a>
+                                </li>
+                                <li class="icon_item">
+                                    <a href="#!" class="icon"><img src="./img/icon/Telegramm.png" alt="telegramm"></a>
+                                </li>
+                                <li class="icon_item">
+                                    <a href="#!" class="icon"><img src="./img/icon/Vk.png" alt="vk"></a>
+                                </li>
+                                <li class="icon_item">
+                                    <a href="#!" class="icon"><img src="./img/icon/YouTube.png" alt="YouTube"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
-                <nav class="header_nav">
-                    <div class="link_left">
-                        <ul class="header_list">
-                            <li class="header_item">
-                                <a href="#!" class="header_link">Главная</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#!" class="header_link">Сегодня</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#!" class="header_link">Новости</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#!" class="header_link">О нас</a>
-                            </li>
-                            <li class="header_item">
-                                <a href="#!" class="header_link">Контакты</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="link_right">
-                        <ul class="header_icon">
-                            <li class="icon_item">
-                                <a href="#!" class="icon"><img src="./img/icon/Ficebook.png" alt="fasebook"></a>
-                            </li>
-                            <li class="icon_item">
-                                <a href="#!" class="icon"><img src="./img/icon/Telegramm.png" alt="telegramm"></a>
-                            </li>
-                            <li class="icon_item">
-                                <a href="#!" class="icon"><img src="./img/icon/Vk.png" alt="vk"></a>
-                            </li>
-                            <li class="icon_item">
-                                <a href="#!" class="icon"><img src="./img/icon/YouTube.png" alt="YouTube"></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
             </div>
-        </div>
-    </header>
-    <main class="main">
-        <section class="intro">
+        </header>
+    <!--Content-->
+        <main class="main">
+            <!--Slider-->
             <section>
                 <ul class="slides">
                     <input type="radio" name="radio-btn" id="img-1" checked />
                     <li class="slide-container">
                         <div class="slide">
-                            <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+                            <h1 class="slide_title">Великий Новгород</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>Вели́кий Но́вгород (до 1999 года официальное название — Но́вгород) — город, расположенный в 
+                                    Северо-Западном федеральном округе России. Административный центр Новгородской области,
+                                    а также Новгородского района, в состав которого не входит, обладая статусом города областного
+                                    значения[4][5] и образуя городской округ Великий Новгород c единственным населённым пунктом в
+                                    его составе[6]. Город воинской славы.
+                                    Великий Новгород — один из древнейших и известнейших городов России — место призвания летописного
+                                    Рюрика и зарождения российской государственности. В Средние века — второй по значимости после Киева
+                                    иевской Руси, в XII—XV веках столица Новгородской республики до её подчинения Московскому княжеству
+                                    в 1478 году, а затем центр Новгородской земли в составе Русского царства.
+                                    Официальной датой основания Новгорода считается 859 год[7][8][9], по первому
+                                    упоминанию города в поздней Никоновской летописи (XVI век). Наиболее ранняя сохранившаяся русская
+                                    летопись «Повесть временных лет» (начало XII века) впервые упоминает его под 862 годом. Однако
+                                    летописи могли относить существование города к этому времени ретроспективно, поскольку надёжно 
+                                    датированные археологические слои Новгорода относятся ко времени не ранее 930-х годов[10]. По 
+                                    мнению археологов, Новгород появился примерно на рубеже IX—X веков[11][12] или в начале X 
+                                    века[13] на месте более ранних селищ и городищ у истока Волхова из Ильменя.</p></a>
+                                <img src="/img/content/content_slide/content1.jpg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-6" class="prev">&#x2039;</label>
@@ -73,7 +95,26 @@
                     <input type="radio" name="radio-btn" id="img-2" />
                     <li class="slide-container">
                         <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+                            <h1 class="slide_title">Великий Новгород</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>Вели́кий Но́вгород (до 1999 года официальное название — Но́вгород) — город, расположенный в 
+                                    Северо-Западном федеральном округе России. Административный центр Новгородской области,
+                                    а также Новгородского района, в состав которого не входит, обладая статусом города областного
+                                    значения[4][5] и образуя городской округ Великий Новгород c единственным населённым пунктом в
+                                    его составе[6]. Город воинской славы.
+                                    Великий Новгород — один из древнейших и известнейших городов России — место призвания летописного
+                                    Рюрика и зарождения российской государственности. В Средние века — второй по значимости после Киева
+                                    иевской Руси, в XII—XV веках столица Новгородской республики до её подчинения Московскому княжеству
+                                    в 1478 году, а затем центр Новгородской земли в составе Русского царства.
+                                    Официальной датой основания Новгорода считается 859 год[7][8][9], по первому
+                                    упоминанию города в поздней Никоновской летописи (XVI век). Наиболее ранняя сохранившаяся русская
+                                    летопись «Повесть временных лет» (начало XII века) впервые упоминает его под 862 годом. Однако
+                                    летописи могли относить существование города к этому времени ретроспективно, поскольку надёжно 
+                                    датированные археологические слои Новгорода относятся ко времени не ранее 930-х годов[10]. По 
+                                    мнению археологов, Новгород появился примерно на рубеже IX—X веков[11][12] или в начале X 
+                                    века[13] на месте более ранних селищ и городищ у истока Волхова из Ильменя.</p></a>
+                                <img src="/img/content/content_slide/Novgorod.jpg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-1" class="prev">&#x2039;</label>
@@ -84,7 +125,19 @@
                     <input type="radio" name="radio-btn" id="img-3" />
                     <li class="slide-container">
                         <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+                            <h1 class="slide_title">Санкт-Петербург</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>Санкт-Петербу́рг (с 18 [31] августа 1914 года до 26 января 1924[8] года — Петрогра́д,
+                                    с 26 января 1924 года до 6 сентября 1991 года[3] — Ленингра́д, в разговорной речи — Пи́тер, сокр.
+                                    — СПб) — второй по численности населения город России[9]. Город федерального значения.
+                                    Административный центр Северо-Западного федерального округа. Основан 16 (27) мая 1703 года
+                                        царём Петром I. В 1714—1728 и 1732—1918 годах — столица Российского государства[* 1][10].
+                                    Назван в честь Святого Петра, небесного покровителя царя-основателя, но со временем стал всё
+                                    больше ассоциироваться с именем самого Петра I. Город исторически и культурно связан с 
+                                    рождением Российской империи и вхождением России в современную историю в роли европейской
+                                    великой державы[11]Перейти к разделу «#История».</p></a>
+                                <img src="/img/content/content_slide/Piter.jpg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-2" class="prev">&#x2039;</label>
@@ -95,7 +148,21 @@
                     <input type="radio" name="radio-btn" id="img-4" />
                     <li class="slide-container">
                         <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+                            <h1 class="slide_title">Псков</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>Псков — город в России, административный центр Псковской области,
+                                    в Северо-Западном федеральном округе. Является городом областного подчинения;
+                                    образует самостоятельное муниципальное образование город Псков в статусе городского
+                                    округа. Расположен на реке Великой при слиянии её с рекой Псковой. Население — 209
+                                        426[3] чел. (2021).
+                                    Псков — один из древнейших городов России, впервые упоминается в Лаврентьевской летописи
+                                    под 903 годом[4]. В 1348—1510 годах — столица независимой Псковской республики. В 1510 году
+                                    город вошёл в состав Русского централизованного государства. До начала XVIII века Псков был
+                                    одним из крупнейших городов России и Европы, важнейшим оборонительным и торговым центром страны.
+                                        Псковская крепость состояла из пяти крепостных колец (три из которых сохранены по сей день),
+                                        что делало Псков практически неприступным[5].</p></a>
+                                <img src="/img/content/content_slide/Pskov.jpg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-3" class="prev">&#x2039;</label>
@@ -106,7 +173,24 @@
                     <input type="radio" name="radio-btn" id="img-5" />
                     <li class="slide-container">
                         <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+                            <h1 class="slide_title">Москва</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>Москва́ (произношение (инф.)) — столица России, город федерального значения,
+                                    административный центр Центрального федерального округа и центр Московской области,
+                                    в состав которой не входит[6]. Крупнейший по численности населения город России и её
+                                    субъект — 12 632 409[3] человек (2022), самый населённый из городов, полностью расположенных
+                                        в Европе, занимает 22 место среди городов мира по численности населения[7], крупнейший
+                                        русскоязычный город в мире. Центр Московской городской агломерации.
+                                    Первое письменное упоминание о Москве относится к 1147 году[6], и история города насчитывает, 
+                                    по меньшей мере, 874 года. Археологические данные свидетельствуют о существовании городского
+                                    поселения в районе будущего Кремля с XI века[8]. Москва — историческая столица Великого княжества
+                                    Московского, Русского царства, Российской империи (в 1728—1732 годах[9][10][11][12]), Советской 
+                                    России и СССР. Город-герой. В Москве находятся федеральные органы государственной власти 
+                                    Российской Федерации (за исключением Конституционного суда), посольства иностранных государств,
+                                    штаб-квартиры большинства крупнейших российских коммерческих организаций и общественных
+                                        объединений.</p></a>
+                                <img src="/img/content/content_slide/Moskva.jpeg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-4" class="prev">&#x2039;</label>
@@ -117,7 +201,17 @@
                     <input type="radio" name="radio-btn" id="img-6" />
                     <li class="slide-container">
                         <div class="slide">
-                          <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+                            <h1 class="slide_title">Порхов</h1>
+                            <div class="slide_content">
+                                <a href="#!"><p>По́рхов — город (с 1239[3]) в России, административный центр Порховского
+                                    района Псковской области. Составляет муниципальное образование Порхов со статусом
+                                    городского поселения, в границах города.
+                                    Население — 8095[2] (2021)[⇨].
+                                    Город расположен на Шелонской низменности, на реке Шелонь (бассейн озера Ильмень), 
+                                    в 3 км от одноимённой железнодорожной станции и в 88 км к востоку от Пскова. 
+                                    В 10 км к западу от Порхова находится бальнеологический курорт Хилово[4].</p></a>
+                                <img src="/img/content/content_slide/Porkhov.jpg" alt="Velikiy Novgorod">
+                            </div>
                         </div>
                         <div class="nav">
                             <label for="img-5" class="prev">&#x2039;</label>
@@ -126,39 +220,28 @@
                     </li>
                 
                     <li class="nav-dots">
-                      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-                      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-                      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-                      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-                      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-                      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+                    <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+                    <label for="img-6" class="nav-dot" id="img-dot-6"></label>
                     </li> 
             </ul>
             </section>
-        </section>
-        <div class="tours">
-            <div class="wrapper_fool">
-                <div class="tours_tour tour">
-                    <div class="tours_pic">
-                        <img src="./img/content/content1.jpg" alt="more" class="tour_thumb">
-                    </div>
-                    <div class="tour_info">
-                        <h3 class="tour_title">
-                            Префектура в фокусе: Тоттори
-                        </h3>
-                        <p class="tour_desc">
-                            Спрыгнуть с балкона на голову незнакомцу. Преследуйте клубок веревки,
-                            чтобы спрятаться, когда придут гости. Будучи великолепным с животом вверх,
-                            я мог бы пописать на это, если бы у меня была энергия, но под кроватью,
-                            для нападения на ребенка, откройте дверь,
-                        </p>
-                        <a href="#!" class="tour_more">Читать полностью</a>
-                    </div>
-                </div>
-                <div class="tours_tour tour">
+            <!--tours-->
+            <section class="tours">
+                <div class="wrapper_fool">
+                    <h2 class="content_title">
+                        Сегодня лучшие места для посещения
+                    </h2>
+                    <div class="tours_tour tour">
+                        <div class="tours_pic">
+                            <img src="./img/content/content1.jpg" alt="more" class="tour_thumb">
+                        </div>
                         <div class="tour_info">
                             <h3 class="tour_title">
-                                Популярный район: Арасияма в Киото.
+                                Префектура в фокусе: Тоттори
                             </h3>
                             <p class="tour_desc">
                                 Спрыгнуть с балкона на голову незнакомцу. Преследуйте клубок веревки,
@@ -167,24 +250,37 @@
                                 для нападения на ребенка, откройте дверь,
                             </p>
                             <a href="#!" class="tour_more">Читать полностью</a>
-                        </div>    
-                        <div class="tours_pic">
-                            <img src="./img/content/content2.jpg" alt="more" class="tour_thumb">
                         </div>
+                    </div>
+                    <div class="tours_tour tour">
+                            <div class="tour_info">
+                                <h3 class="tour_title">
+                                    Популярный район: Арасияма в Киото.
+                                </h3>
+                                <p class="tour_desc">
+                                    Спрыгнуть с балкона на голову незнакомцу. Преследуйте клубок веревки,
+                                    чтобы спрятаться, когда придут гости. Будучи великолепным с животом вверх,
+                                    я мог бы пописать на это, если бы у меня была энергия, но под кроватью,
+                                    для нападения на ребенка, откройте дверь,
+                                </p>
+                                <a href="#!" class="tour_more">Читать полностью</a>
+                            </div>    
+                            <div class="tours_pic">
+                                <img src="./img/content/content2.jpg" alt="more" class="tour_thumb">
+                            </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <selection class="content">
-            <div class="wrapper_fool">
+            </section>
+            <section class="wrapper_fool">
                 <h2 class="content_title">
                     Сегодня лучшие места для посещения
                 </h2>
                 <div class="content_cards">
                     <div class="content_card">
                         <div class="content_pic">
-                            <img src="./img/content/content_cotolog/content1.jpg" alt="content1" class="content1">
+                            <img src="./img/content/content_cotolog/content1.jpg" alt="content1" class="thumb">
                             <div class="content_stats">
-                                <h3 class="content_title">
+                                <h3 class="title">
                                     Контент 1
                                 </h3>
                                 <div class="content_likes">
@@ -204,11 +300,226 @@
                             Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
                             Будучи великолепным с животом вверх, я мог пописать на это.
                         </p>
-                        <a href="#!" class="content more">Читать далее</a>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                    <div class="content_card">
+                        <div class="content_pic">
+                            <img src="./img/content/content_cotolog/content2.jpg" alt="content2" class="thumb">
+                            <div class="content_stats">
+                                <h3 class="title">
+                                    Контент 2
+                                </h3>
+                                <div class="content_likes">
+                                    <span class="content_likes_value">
+                                        300
+                                    </span>
+                                </div>
+                                <div class="content_comments">
+                                    <span class="content_comments_value">
+                                        10
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="content_desc">
+                            Спрыгнуть с балкона на голову незнакомцу. 
+                            Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
+                            Будучи великолепным с животом вверх, я мог пописать на это.
+                        </p>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                    <div class="content_card">
+                        <div class="content_pic">
+                            <img src="./img/content/content_cotolog/content3.jpg" alt="content3" class="thumb">
+                            <div class="content_stats">
+                                <h3 class="title">
+                                    Контент 3
+                                </h3>
+                                <div class="content_likes">
+                                    <span class="content_likes_value">
+                                        300
+                                    </span>
+                                </div>
+                                <div class="content_comments">
+                                    <span class="content_comments_value">
+                                        10
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="content_desc">
+                            Спрыгнуть с балкона на голову незнакомцу. 
+                            Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
+                            Будучи великолепным с животом вверх, я мог пописать на это.
+                        </p>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                    <div class="content_card">
+                        <div class="content_pic">
+                            <img src="./img/content/content_cotolog/content4.jpg" alt="content4" class="thumb">
+                            <div class="content_stats">
+                                <h3 class="title">
+                                    Контент 4
+                                </h3>
+                                <div class="content_likes">
+                                    <span class="content_likes_value">
+                                        300
+                                    </span>
+                                </div>
+                                <div class="content_comments">
+                                    <span class="content_comments_value">
+                                        10
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="content_desc">
+                            Спрыгнуть с балкона на голову незнакомцу. 
+                            Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
+                            Будучи великолепным с животом вверх, я мог пописать на это.
+                        </p>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                    <div class="content_card">
+                        <div class="content_pic">
+                            <img src="./img/content/content_cotolog/content5.jpg" alt="content5" class="thumb">
+                            <div class="content_stats">
+                                <h3 class="title">
+                                    Контент 5
+                                </h3>
+                                <div class="content_likes">
+                                    <span class="content_likes_value">
+                                        300
+                                    </span>
+                                </div>
+                                <div class="content_comments">
+                                    <span class="content_comments_value">
+                                        10
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="content_desc">
+                            Спрыгнуть с балкона на голову незнакомцу. 
+                            Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
+                            Будучи великолепным с животом вверх, я мог пописать на это.
+                        </p>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                    <div class="content_card">
+                        <div class="content_pic">
+                            <img src="./img/content/content_cotolog/content6.jpg" alt="content6" class="thumb">
+                            <div class="content_stats">
+                                <h3 class="title">
+                                    Контент 6
+                                </h3>
+                                <div class="content_likes">
+                                    <span class="content_likes_value">
+                                        300
+                                    </span>
+                                </div>
+                                <div class="content_comments">
+                                    <span class="content_comments_value">
+                                        10
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="content_desc">
+                            Спрыгнуть с балкона на голову незнакомцу. 
+                            Преследуйте клубок веревки, чтобы спрятаться, когда придут гости. 
+                            Будучи великолепным с животом вверх, я мог пописать на это.
+                        </p>
+                        <a href="#!" class="content_more">Читать далее</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div id="sidebar">
+            <div class="inner">
+                <section class="search">
+                    <div class="search_input">
+                        <form method="post" action="#">
+                            <input type="search" name="query" id="query" placeholder="Поиск">
+                            <button type="submit"></button>
+                        </form>
+                    </div>
+                </section>
+                <nav id="menu">
+                    <h1>Меню</h1>
+                    <ul>
+                        <li class="menu_sity"><a href="#!">Великий Новгород</a></li>
+                        <li class="menu_sity"><a href="#!">Псков</a></li>
+                        <li class="menu_sity"><a href="#!">Порхов</a></li>
+                        <li class="menu_sity"><a href="#!">Москва</a></li>
+                        <li class="menu_sity"><a href="#!">Санкт-Петербу́рг</a></li>
+                    </ul>
+                </nav>
+                <div class="news_sidebar">
+                    <h1>Другие новости</h1>
+                    <article class="tv">
+                        <a href="#!" class="image_news"><img src="/img/content/content_news/music.jpg" alt=""></a>
+                        <p>Му́зыка — вид искусства. Согласно А. Н. Сохору (МЭ 3, 1976 г.),
+                        этот вид «отражает действительность и воздействует на человека
+                        посредством осмысленных и особым образом организованных по высоте
+                        и во времени звуковых последований, состоящих в основном из тонов».</p>
+                    </article>
+                    <article>
+                        <a href="#!" class="image_news"><img src="/img/content/content_news/prog.jpg" alt=""></a>
+                        <p>Программи́рование — процесс создания компьютерных программ.
+                            По выражению одного из основателей языков программирования Никлауса Вирта
+                            «Программы = алгоритмы + структуры данных».
+                            Программирование основывается на использовании языков программирования,
+                            на которых записываются исходные тексты программ.</p>
+                    </article>
+                    <article>
+                        <a href="#!" class="image_news"><img src="/img/content/content_news/biolog.jpg" alt=""></a>
+                        <p>Биоло́гия — наука о живых существах и их взаимодействии со средой обитания.
+                            Изучает все аспекты жизни, в частности: структуру, функционирование, рост,
+                            происхождение, эволюцию и распределение живых организмов на Земле.
+                            Классифицирует и описывает живые существа, происхождение их видов,
+                            взаимодействие между собой и с окружающей средой[2].</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer_items">
+                    <div class="footer_logo">
+                        
+                    </div>
+                    <div class="footer_nav">
+                        <ul class="footer_menum">
+                            <li class="footer_menum_item"><h3 class="footer_menum_title">Рубрики</h3></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Сегодня</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Новости</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">О нас</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Контакты</a></li>
+                        </ul>
+                        <ul class="footer_menum">
+                            <li class="footer_menum_item"><h3 class="footer_menum_title">Социальные сети</h3></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">fasebook</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">VK</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">telegramm</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">YouTube</a></li>
+                        </ul>
+                        <ul class="footer_menum">
+                            <li class="footer_menum_item"><h3 class="footer_menum_title">Города</h3></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Санкт-Петербу́рг</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Псков</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Порхов</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Москва</a></li>
+                            <li class="footer_menum_item"><a class="footer_menum_link" href="#!">Вели́кий Но́вгород</a></li>
+                        </ul>
+                    </div>
+                    <div class="untitled">
+                        <p>© Untitled. All rights reserved. Demo Images: Unsplash. Design: HTML5 UP.</p>
                     </div>
                 </div>
             </div>
-        </selection>
-    </main>
+        </footer>
+    </div>
+    <script src="/js/main.js"></script>
 </body>
 </html>
