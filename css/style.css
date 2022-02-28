@@ -71,12 +71,21 @@ img{
     vertical-align: middle;
     border: 0;
 }
+svg path {
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+    }
 #site{
     display: flex;
     flex-direction: row-reverse;
     min-height: 100vh;
-    min-height: 100%;
-    padding: 0 15px;
+}
+.inner{
+    padding: 0 6em 0.1em 6em;
+    margin: 0 auto;
+    max-width: 110em;
+    height: 100%;
 }
 .content_title{
     border-bottom: solid  3px #f56a6a;
@@ -89,21 +98,46 @@ img{
 }
 /*Блок header - начало*/
 .header{
-    position: fixed;
-    top: 0;
-    right: 150px;
-    width: 100%px;
-    padding-bottom: 20px;
-    float: right;
-    height: 213px;
+    display: flex;
+    border-bottom: solid 5px #f56a6a;
+    padding-bottom: 1em;
+    position: relative;
     z-index: 999;
 }
 .header_active{
     background-color: #030303;
 }
+.header_burger{
+    display: none;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    margin-bottom: 3px;
+}
+.burger_line{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #030303;
+    position: absolute;
+    left: 0;
+}
+.burger_line_first{
+    top: 0;
+}
+.burger_line_third{
+    bottom: 0;
+}
+.burger_line_second{
+    top: 50%;
+    transform: translateY(-50%);
+}
 .wrapper{
     max-width: 1363px;
     margin: 0 auto;
+}
+.wrapper_h{
+    float: right;
 }
 .wrapper_fool{
     max-width: 1364px;
@@ -115,7 +149,6 @@ img{
     align-items: flex-end;
     justify-content: space-between;
     padding-top: 50px;
-    border-bottom: 5px solid #F56A6A;
 }
 .header_list{
     display: flex;
@@ -141,16 +174,20 @@ img{
     background-color: #C4C4C4;
 }
 .header_icon{
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    cursor: default;
+}
+.icon_item{
+    display: inline-block;
+    padding: 0 1em 0 0;
+}
+.icon_link{
+    position: relative;
 }
 .link_left{
     float: left;
-}
-.link_right{
-    float: right;
-    margin-top: 16px;
 }
 .icon{
     padding-left: 31px;
@@ -161,8 +198,6 @@ img{
     flex-grow: 1;
     flex-shrink: 1;
     width: 100%;
-    float: right;
-    margin-top: 202px;
 }
 .intro{
     min-height: 70vh;
@@ -170,9 +205,12 @@ img{
     padding-top: 0px;
     padding-bottom: 223px;
 }
+.banner{
+    display: flex;
+}
 .slides{
     padding: 0;
-    width: 1364px;
+    width: 100%;
     height: 615px;
     display: block;
     margin: 0 auto;
@@ -323,7 +361,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     color: #F56A6A;
     text-decoration: none;
     padding-right: 59px;
-    background: url(/img/icon/more.svg) no-repeat 95% 40%;
+    background: url(/img/content/more.svg) no-repeat 95% 40%;
 }
 .tour_more:hover, .tour_more:focus{
     opacity: .65;
@@ -372,7 +410,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     color: #FFF;
     padding-right: 20px;
     margin-right: 14px;
-    background: url(../img/icon/Shape.svg) no-repeat right;
+    background: url(../img/content/Shape.svg) no-repeat right;
 }
 .content_comments{
     font-weight: 500;
@@ -380,7 +418,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     line-height: 24px;
     color: #FFF;
     padding-right: 20px;
-    background: url(../img/icon/Patch.svg) no-repeat right;
+    background: url(../img/content/Patch.svg) no-repeat right;
 }
 .content_desc{
     font-size: 16px;
@@ -412,12 +450,12 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     background-color: #f5f6f7;
     font-size: 0.9em;
     position: relative;
-    width: 24em;
+    width: 26em;
 }
-.inner{
+.inner_sidebar{
     padding: 2.22222em 2.44444em 2.22222em;
     position: relative;
-    width: 24em;
+    width: 26em;
 }
 .search{
     background-color: #eff1f2;
@@ -575,3 +613,17 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     right: 0;
 }
 /*Блок footer - конец*/
+/*sidebar mobile - начало*/
+@media screen and (max-width: 760px){
+    .header_burger{
+        display: block;
+    }
+}
+@media screen and (max-width: 1266px){
+    .link_right{
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+}
+/*sidebar mobile - конец*/
